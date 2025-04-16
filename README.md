@@ -1,7 +1,7 @@
 
 
 <p align="center">
-    <img src="static/favicon.ico"/>
+    <img src="static/icon.png"/>
 </p>
 
 🏆 UCL Results
@@ -33,6 +33,8 @@ Version control: Git + GitHub
 💻 Lightweight Flask backend
 
 👶 First project using API, HTML, CSS — built with curiosity and passion
+
+![site Screenshot](static/show.png)
 
 🙋‍♂️ About Me
 I'm a student in my first semester of tech studies.
