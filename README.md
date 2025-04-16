@@ -1,7 +1,7 @@
 
 
 <p align="center">
-    <img src="images/uclicon.ico"/>
+    <img src="images/favicon.ico"/>
 </p>
 
 🏆 UCL Results
