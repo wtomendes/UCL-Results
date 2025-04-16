@@ -15,16 +15,14 @@ This was my first project using an API, HTML, and CSS. I'm just a student in my 
 
 🛠 Tech Stack
 Frontend: HTML + CSS
-
 Backend: Python + Flask
-
 API: Football-Data.org
-
 Deployment: Render
-
 Version control: Git + GitHub
 
+
 ✨ Features
+
 📡 Live UEFA Champions League results, fetched from Football-Data.org
 
 🎵 Play the Champions League anthem by clicking a button
