@@ -14,10 +14,15 @@ This was my first project using an API, HTML, and CSS. I'm just a student in my 
 🔗 Live site: ucl-results-1.onrender.com
 
 🛠 Tech Stack
+
 Frontend: HTML + CSS
+
 Backend: Python + Flask
+
 API: Football-Data.org
+
 Deployment: Render
+
 Version control: Git + GitHub
 
 
