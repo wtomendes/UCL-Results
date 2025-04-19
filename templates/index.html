@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>UCL Last Results</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/ico">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="{{ url_for('static', filename='trophy.jpg') }}" alt="Champions League Trophy" class="full-width-banner">
+    <div class="shadow-transition"></div>
+
+    <div class="buttons-container">
+        <button class="button" id="play-button">Play</button>
+        <button class="pause-button" id="pause-button">Pause</button>
+    </div>
+
+    <div class="container">
+        <h1>Champions League<br><span>Last Results:</span></h1>
+
+        <div class="matches">
+            {% for jogo in jogos %}
+            <div class="match-card">
+                <div class="match-stage">{{ jogo.stage }}</div> 
+                <div class="match-date">{{ jogo.date }}</div>
+                <div class="teams">
+                    <span class="team">{{ jogo.home }}</span>
+                    <span class="score">{{ jogo.score }}</span>
+                    <span class="team">{{ jogo.away }}</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+   
+    <audio id="ucl-audio" src="{{ url_for('static', filename='ucl.mp3') }}" preload="auto"></audio>
+
+    <script>
+        const audio = document.getElementById("ucl-audio");
+        const playButton = document.getElementById("play-button");
+        const pauseButton = document.getElementById("pause-button");
+
+        function playAudio() {
+            audio.play();
+            playButton.style.display = 'none';
+            pauseButton.style.display = 'inline-block';
+        }
+
+        function pauseAudio() {
+            audio.pause();
+            playButton.style.display = 'inline-block';
+            pauseButton.style.display = 'none';
+        }
+
+        audio.addEventListener('ended', function () {
+            audio.currentTime = 0;
+            audio.play();
+        });
+
+        playButton.addEventListener('click', playAudio);
+        pauseButton.addEventListener('click', pauseAudio);
+    </script>
+</body>
+</html>
