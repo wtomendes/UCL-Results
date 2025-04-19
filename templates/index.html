@@ -8,24 +8,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Imagem em full-width -->
     <img src="{{ url_for('static', filename='trophy.jpg') }}" alt="Champions League Trophy" class="full-width-banner">
     <div class="shadow-transition"></div>
 
-    <!-- Container para os botões Play/Pause -->
     <div class="buttons-container">
         <button class="button" id="play-button">Play</button>
         <button class="pause-button" id="pause-button">Pause</button>
     </div>
 
-    <!-- Conteúdo principal da página -->
     <div class="container">
         <h1>Champions League<br><span>Last Results:</span></h1>
 
         <div class="matches">
             {% for jogo in jogos %}
             <div class="match-card">
-                <div class="match-stage">{{ jogo.stage }}</div> <!-- Exibe a fase da partida -->
+                <div class="match-stage">{{ jogo.stage }}</div> 
                 <div class="match-date">{{ jogo.date }}</div>
                 <div class="teams">
                     <span class="team">{{ jogo.home }}</span>
@@ -37,7 +34,7 @@
         </div>
     </div>
 
-    <!-- Áudio -->
+   
     <audio id="ucl-audio" src="{{ url_for('static', filename='ucl.mp3') }}" preload="auto"></audio>
 
     <script>
