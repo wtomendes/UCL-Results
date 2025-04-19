@@ -11,7 +11,7 @@ At the top of the page, you can click a button to play the iconic Champions Leag
 
 This was my first project using an API, HTML, and CSS. I'm just a student in my first semester, exploring new technologies and trying to build things around what I love.
 
-🔗 Live site: ucl-results-1.onrender.com
+🔗 Live site: https://ucl-results-1.onrender.com/
 
 🛠 Tech Stack
 
