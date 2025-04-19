@@ -8,7 +8,7 @@ API_KEY = os.getenv('API_KEY')
 BASE_URL = 'https://api.football-data.org/v4/competitions/CL/matches'
 
 
-@app.route('/')  # Página principal já aponta pra /champions-league-results
+@app.route('/') 
 def home():
     return champions_league_results()
 
@@ -34,7 +34,7 @@ def champions_league_results():
                 'home': match['homeTeam']['name'],
                 'away': match['awayTeam']['name'],
                 'score': f"{match['score']['fullTime']['home']} - {match['score']['fullTime']['away']}",
-                'stage': match['stage']  # Inclua a fase da partida
+                'stage': match['stage']  
             }
             for match in matches
         ]
