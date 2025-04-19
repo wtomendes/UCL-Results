@@ -11,7 +11,7 @@ body {
     max-height: 300px;
     object-fit: cover;
     display: block;
-    margin-bottom: 20px;  /* Ajuste de espaçamento após a imagem */
+    margin-bottom: 20px;  
 }
 
 .container {
@@ -53,7 +53,7 @@ h1 span {
 
 .match-card:hover {
     transform: scale(1.02);
-    box-shadow: 0 0 20px #1e42cd; /* Alterado para #931bd0 e intensificado */
+    box-shadow: 0 0 20px #1e42cd; 
 }
 
 .match-date {
@@ -104,7 +104,7 @@ h1 span {
 
 .buttons-container {
     text-align: center;
-    margin-top: 20px;  /* Garantir espaçamento adequado entre imagem e botões */
+    margin-top: 20px; 
 }
 
 .button, .pause-button {
@@ -112,7 +112,7 @@ h1 span {
 }
 
 .pause-button {
-    display: none;  /* Fica oculto inicialmente */
+    display: none; 
 }
 
 .sidebar {
@@ -147,15 +147,15 @@ h1 span {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: #131317; /* Alterado para preto */
-    color: #0442c7; /* Alterado para azul */
-    font-size: 0.8rem; /* Reduzido o tamanho do texto */
-    padding: 4px 8px; /* Ajustado o espaçamento interno */
-    border-radius: 5px; /* Mantém as bordas arredondadas */
+    background-color: #131317; 
+    color: #0442c7; 
+    font-size: 0.8rem; 
+    padding: 4px 8px; 
+    border-radius: 5px;
     font-weight: bold;
 }
 
-/* Ajustes leves para mobile */
+
 @media (max-width: 600px) {
     .container {
         padding: 10px;
