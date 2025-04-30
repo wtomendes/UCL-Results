@@ -4,7 +4,7 @@
     <img src="static/uclr.png"/>
 </p>
 
-🏆 UCL Results
+## UCL Results
 
 A small web app that shows the latest UEFA Champions League results — with style.
 At the top of the page, you can click a button to play the iconic Champions League anthem, setting the mood like it’s matchday night. ⚽🎶
@@ -25,8 +25,7 @@ Deployment: Render
 
 Version control: Git + GitHub
 
-
-✨ Features
+## Features
 
 📡 Live UEFA Champions League results, fetched from Football-Data.org
 
@@ -40,7 +39,7 @@ Version control: Git + GitHub
 
 ![site Screenshot](static/show.png)
 
-🙋‍♂️ About Me
+## About Me
 
 I'm a student in my first semester of tech studies.
 This was a small project to dive into APIs, Flask, HTML/CSS, and deploying apps online.
